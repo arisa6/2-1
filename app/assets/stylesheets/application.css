@@ -13,13 +13,11 @@
  *= require_tree .
  *= require_self
  */
-* {
-margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+ #notice {
+    color: green;
 }
-
-body {
+ 
+ body {
     background-color: #fff;
     color: #333;
     font-family: verdana, arial, helvetica, sans-serif;
@@ -27,14 +25,11 @@ body {
     line-height: 18px;
     margin: 33px;
 }
-
-h1 {
+ 
+ h1 {
     display: block;
-    font-size: 2em;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    font-size: 25px;
+    margin: 18px 0;
     font-weight: bold;
 }
 
@@ -47,21 +42,16 @@ table {
     border-color: grey;
 }
 
-thead {
-    display: table-header-group;
-    vertical-align: middle;
-    border-color: inherit;
-}
-
-tr {
-    display: table-row;
-    vertical-align: inherit;
-    border-color: inherit;
+th {
+    padding-bottom: 5px;
 }
 
 td {
     display: table-cell;
     vertical-align: inherit;
+    padding-bottom: 7px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 p, ol, ul, td {
@@ -71,3 +61,24 @@ p, ol, ul, td {
     margin: 33px;
 }
 
+h2 {
+    display: block;
+    font-size: 20px;
+    margin: 16px 0;
+    font-weight: bold;
+}
+
+form {
+    display: block;
+    margin: 0;
+}
+
+label {
+    margin-top: 10px;
+    display: block;
+    cursor: default;
+} 
+
+input {
+    margin: 10px 0;
+}
